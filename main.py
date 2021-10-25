@@ -20,7 +20,6 @@ def main():
     read_file()
     generate_pop()
     # testOutput()
-
     data.close()
 
 # reads and fills utility and weight lists
@@ -47,7 +46,7 @@ def generate_pop():
     cols = 400
     for i in range(0, rows):
         # appends list with a 0 or 1
-        POPULATION.append([getRand() for j in range(0, 400)])
+        POPULATION.append([getRand() for j in range(0, cols)])
 
 # returns a random int between 0 and 1
 
@@ -65,8 +64,9 @@ def testOutput():
     # for i in range(0, len(my_weight)):
     #     print(my_weight[i], end=' ')
 
-    for i in range(0, 5):
-        for j in range(0, 1):
+    # output population, for testing purposes.
+    for i in range(0, 50):
+        for j in range(0, 50):
             print(POPULATION[i][j], end=' ')
 
 
