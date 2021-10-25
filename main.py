@@ -12,15 +12,14 @@ my_utility = []
 my_weight = []
 
 # opens file
-data = open("testFile.txt")
-# data = open("Program2Input.txt")
+#data = open("testFile.txt")
+data = open("Program2Input.txt")
 
 
 def main():
     read_file()
     generate_pop()
     # testOutput()
-    print('')
 
     data.close()
 
@@ -28,7 +27,6 @@ def main():
 
 
 def read_file():
-    print('entered read_file()')
     dataString = data.read()
     dataList = dataString.split()
 
